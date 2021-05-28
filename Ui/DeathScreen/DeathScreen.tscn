@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Ui/DeathScreen/DeathScreen.gd" type="Script" id=1]
+[ext_resource path="res://Ui/ButtonTexture/YouDied.png" type="Texture" id=2]
+[ext_resource path="res://Ui/ButtonTexture/YouDied-Hover.png" type="Texture" id=3]
+[ext_resource path="res://Ui/ButtonTexture/NewGame.png" type="Texture" id=4]
+[ext_resource path="res://Ui/ButtonTexture/NewGame-Hover.png" type="Texture" id=5]
+[ext_resource path="res://Ui/ButtonTexture/Exit-Hover.png" type="Texture" id=6]
+[ext_resource path="res://Ui/ButtonTexture/Exit.png" type="Texture" id=7]
+
+[node name="DeathScreen" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouDied" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -199.0
+margin_top = -262.5
+margin_right = 199.0
+margin_bottom = -149.5
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGame" type="TextureButton" parent="YouDied"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -107.0
+margin_top = 57.0
+margin_right = 107.0
+margin_bottom = 135.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="TextureButton" parent="YouDied"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -55.5
+margin_top = 78.0
+margin_right = 55.5
+margin_bottom = 155.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="YouDied/NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="pressed" from="YouDied/Exit" to="." method="_on_Exit_pressed"]

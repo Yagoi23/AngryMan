@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://BlenderModels/Items/coonan357(magnum).glb" type="PackedScene" id=1]
+[ext_resource path="res://GameModels/Items/coonan357(item).gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1, 0.199663 )
+
+[sub_resource type="BoxShape" id=2]
+
+[node name="coonan" type="RigidBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.472, 0, 0, 0, 0.472, 0, 0, 0, 0.472, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Area" type="Area" parent="."]
+transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 0.918027, 0, 0, 0, 0.918027, 0, 0, 0, 0.918027, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="coonan357(magnum)" parent="." instance=ExtResource( 1 )]
+transform = Transform( 4.72, 0, 0, 0, 4.72, 0, 0, 0, 4.72, 0, 0, 0 )
+[connection signal="body_shape_entered" from="Area" to="." method="_on_Area_body_shape_entered"]

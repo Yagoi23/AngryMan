@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameModels/Blocks/SmoothStoneBlock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GameModels/Blocks/StoneBrick.tscn" type="PackedScene" id=2]
+
+[node name="Hallway" type="Spatial"]
+
+[node name="SmoothStoneBlock" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="StoneBrick" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2 )
+
+[node name="StoneBrick2" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2 )
+
+[node name="StoneBrick3" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 2 )
+
+[node name="StoneBrick4" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0 )
+
+[node name="StoneBrick5" parent="Walls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2 )

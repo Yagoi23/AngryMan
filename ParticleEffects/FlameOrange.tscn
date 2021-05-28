@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0.654902, 0, 1 )
+emission_enabled = true
+emission = Color( 0.364706, 0.262745, 0, 1 )
+emission_energy = 8.4
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 1, 1, 1 )
+
+[node name="FlameOrange" type="CPUParticles"]
+amount = 16
+lifetime = 3.0
+lifetime_randomness = 1.0
+mesh = SubResource( 2 )
+gravity = Vector3( 0, 0, -9.8 )
+initial_velocity = 2.0
+initial_velocity_random = 1.0
+angular_velocity = 2.0
+angular_velocity_random = 1.0

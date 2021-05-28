@@ -1,0 +1,310 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GameModels/Blocks/SmoothStoneBlock.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LevelParts/Floors/3x3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameModels/Lights/Light.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GameModels/Hazards/Spike.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GameModels/Blocks/CrackedStoneBrick.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameModels/Items/coonan357(item).tscn" type="PackedScene" id=8]
+
+[node name="TestLevel1" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0.000785398, 0, -0.000785398, 1, 0, 1.9613, 2.17421 )
+
+[node name="Ground" type="Spatial" parent="."]
+
+[node name="SmoothStoneBlock" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="SmoothStoneBlock5" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 5, 2 )
+
+[node name="SmoothStoneBlock6" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 0 )
+
+[node name="SmoothStoneBlock7" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -2 )
+
+[node name="SmoothStoneBlock2" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 6 )
+
+[node name="SmoothStoneBlock9" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 20 )
+
+[node name="SmoothStoneBlock3" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 12 )
+
+[node name="SmoothStoneBlock8" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 14 )
+
+[node name="SmoothStoneBlock4" parent="Ground" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 7, 4 )
+
+[node name="Spatial" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -4 )
+
+[node name="Spatial2" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 2 )
+
+[node name="Spatial37" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, 14 )
+
+[node name="Spatial38" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, 14 )
+
+[node name="Spatial39" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, 8 )
+
+[node name="Spatial40" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, 8 )
+
+[node name="Spatial41" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, 2 )
+
+[node name="Spatial42" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, 2 )
+
+[node name="Spatial43" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, -4 )
+
+[node name="Spatial44" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, -4 )
+
+[node name="Spatial45" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, -10 )
+
+[node name="Spatial46" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, -10 )
+
+[node name="Spatial47" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, -16 )
+
+[node name="Spatial48" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 13, -16 )
+
+[node name="Spatial3" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, -4 )
+
+[node name="Spatial4" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, 2 )
+
+[node name="Spatial5" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 8 )
+
+[node name="Spatial6" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 14 )
+
+[node name="Spatial7" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, 8 )
+
+[node name="Spatial8" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, 14 )
+
+[node name="Spatial9" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -16 )
+
+[node name="Spatial10" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -10 )
+
+[node name="Spatial11" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, -16 )
+
+[node name="Spatial12" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, -10 )
+
+[node name="Spatial13" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, -16 )
+
+[node name="Spatial14" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, -10 )
+
+[node name="Spatial15" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, -16 )
+
+[node name="Spatial16" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, -10 )
+
+[node name="Spatial17" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, -4 )
+
+[node name="Spatial18" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, 2 )
+
+[node name="Spatial19" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, -4 )
+
+[node name="Spatial20" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, 2 )
+
+[node name="Spatial21" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, 8 )
+
+[node name="Spatial22" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 9, 14 )
+
+[node name="Spatial23" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, 8 )
+
+[node name="Spatial24" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -4, 3, 14 )
+
+[node name="Spatial25" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, -16 )
+
+[node name="Spatial26" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, -10 )
+
+[node name="Spatial27" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, -16 )
+
+[node name="Spatial28" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, -10 )
+
+[node name="Spatial29" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, -4 )
+
+[node name="Spatial30" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, 2 )
+
+[node name="Spatial31" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, -4 )
+
+[node name="Spatial32" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, 2 )
+
+[node name="Spatial33" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, 8 )
+
+[node name="Spatial34" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 9, 14 )
+
+[node name="Spatial35" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, 8 )
+
+[node name="Spatial36" parent="Ground" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 3, 14 )
+
+[node name="Spike" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -14 )
+
+[node name="DestructibleWall" type="Spatial" parent="."]
+
+[node name="CrackedStoneBrick" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -16 )
+
+[node name="CrackedStoneBrick2" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -16 )
+
+[node name="CrackedStoneBrick3" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, -16 )
+
+[node name="CrackedStoneBrick4" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, -16 )
+
+[node name="CrackedStoneBrick5" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -16 )
+
+[node name="CrackedStoneBrick6" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -16 )
+
+[node name="CrackedStoneBrick7" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, -16 )
+
+[node name="CrackedStoneBrick8" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, -16 )
+
+[node name="CrackedStoneBrick9" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -16 )
+
+[node name="CrackedStoneBrick10" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -16 )
+
+[node name="CrackedStoneBrick11" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, -16 )
+
+[node name="CrackedStoneBrick12" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -16 )
+
+[node name="CrackedStoneBrick13" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5, -16 )
+
+[node name="CrackedStoneBrick14" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 5, -16 )
+
+[node name="CrackedStoneBrick15" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 7, -16 )
+
+[node name="CrackedStoneBrick16" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 7, -16 )
+
+[node name="CrackedStoneBrick17" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -16 )
+
+[node name="CrackedStoneBrick18" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, -16 )
+
+[node name="CrackedStoneBrick19" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7, -16 )
+
+[node name="CrackedStoneBrick20" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7, -16 )
+
+[node name="CrackedStoneBrick21" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 5, -16 )
+
+[node name="CrackedStoneBrick22" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -16 )
+
+[node name="CrackedStoneBrick23" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7, -16 )
+
+[node name="CrackedStoneBrick24" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -16 )
+
+[node name="CrackedStoneBrick25" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 9, -16 )
+
+[node name="CrackedStoneBrick26" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 9, -16 )
+
+[node name="CrackedStoneBrick27" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 11, -16 )
+
+[node name="CrackedStoneBrick28" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 11, -16 )
+
+[node name="CrackedStoneBrick29" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 9, -16 )
+
+[node name="CrackedStoneBrick30" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 9, -16 )
+
+[node name="CrackedStoneBrick31" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 11, -16 )
+
+[node name="CrackedStoneBrick32" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 11, -16 )
+
+[node name="CrackedStoneBrick33" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 9, -16 )
+
+[node name="CrackedStoneBrick34" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, -16 )
+
+[node name="CrackedStoneBrick35" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 11, -16 )
+
+[node name="CrackedStoneBrick36" parent="DestructibleWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, -16 )
+
+[node name="Light" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 12, 4 )
+
+[node name="Enemy" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 0 )
+
+[node name="coonan" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.867936, 0.440076, 3.4284 )

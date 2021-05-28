@@ -1,0 +1,98 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://GameModels/Blocks/CrackedStoneBrick.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room5(Light).tscn" type="PackedScene" id=4]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room4.tscn" type="PackedScene" id=5]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://LevelParts/Hallways/1x2Hallway.tscn" type="PackedScene" id=8]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room1(Light).tscn" type="PackedScene" id=9]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room2(Light).tscn" type="PackedScene" id=10]
+[ext_resource path="res://Levels/Enviroment.tscn" type="PackedScene" id=11]
+[ext_resource path="res://LevelParts/Hallways/1x1Hallway.tscn" type="PackedScene" id=12]
+[ext_resource path="res://LevelParts/LevelEnd.tscn" type="PackedScene" id=13]
+[ext_resource path="res://GameModels/Items/Battery.tscn" type="PackedScene" id=14]
+
+[node name="Level1" type="Spatial"]
+
+[node name="3x3Room9" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10 )
+
+[node name="CrackedStoneBrick" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 4 )
+
+[node name="CrackedStoneBrick2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3, 4 )
+
+[node name="3x3Room" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14 )
+
+[node name="3x3Room2" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="3x3Room3" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -20 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 11 )]
+
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 16 )
+
+[node name="Hallway" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 7 )
+
+[node name="Hallway2" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -7 )
+
+[node name="Hallway3" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -11 )
+
+[node name="3x3Room4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0 )
+
+[node name="3x3Room5" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10 )
+
+[node name="CrackedStoneBrick3" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 1, -24 )
+
+[node name="CrackedStoneBrick4" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 3, -24 )
+
+[node name="Hallway4" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.42109e-14, 0, -14 )
+
+[node name="3x3Room6" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, -1, 10, 0, -20 )
+
+[node name="3x3Room7" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 0, -20 )
+
+[node name="3x3Room8" parent="." instance=ExtResource( 6 )]
+transform = Transform( -1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, -1, 20, 0, -9.99999 )
+
+[node name="3x3Room10" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20, 0, 0 )
+
+[node name="Hallway5" parent="." instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 0, -27 )
+
+[node name="Battery" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.34132, 0.0833323, 0.8 )
+
+[node name="Battery2" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.72552, 1.18713, 0.71576 )
+
+[node name="Battery3" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65377, 1.59355, -1.12 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5063, 2.32723, -0.0715285 )
+
+[node name="LevelEnd" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -10, 2, -16 )

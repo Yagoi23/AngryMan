@@ -1,0 +1,131 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ui/StatsUI.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.968627, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.74902, 0.784314, 0.0941176, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Ui" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.111359
+margin_top = 0.561218
+margin_right = -0.111389
+margin_bottom = 0.561218
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoCount" type="Label" parent="."]
+margin_left = 51.6438
+margin_top = 43.7067
+margin_right = 86.6438
+margin_bottom = 57.7067
+text = "1 / 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ammo" type="Label" parent="AmmoCount"]
+margin_left = -47.311
+margin_top = 0.442993
+margin_right = -4.31097
+margin_bottom = 14.443
+text = "Ammo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = 48.75
+margin_top = 4.5
+margin_right = 176.75
+margin_bottom = 20.5
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+value = 10.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Health" type="Label" parent="HealthBar"]
+margin_left = -43.75
+margin_top = 2.5
+margin_right = -1.75
+margin_bottom = 16.5
+text = "Health"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PowerBar" type="ProgressBar" parent="."]
+margin_left = 48.75
+margin_top = 23.5
+margin_right = 176.75
+margin_bottom = 39.5
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 2 )
+value = 10.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Power" type="Label" parent="PowerBar"]
+margin_left = -43.75
+margin_top = 2.5
+margin_right = -1.75
+margin_bottom = 16.5
+text = "Power"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEvent" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -20.0
+margin_top = -14.0
+margin_right = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="TextEvent"]
+one_shot = true
+autostart = true
+[connection signal="timeout" from="TextEvent/Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,177 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://GameModels/Blocks/StoneBrick.tscn" type="PackedScene" id=1]
+[ext_resource path="res://LevelParts/Hallways/1x1Hallway.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameModels/Lights/Light.tscn" type="PackedScene" id=4]
+[ext_resource path="res://LevelParts/Hallways/1x2Hallway.tscn" type="PackedScene" id=5]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room5(Light).tscn" type="PackedScene" id=6]
+[ext_resource path="res://LevelParts/Rooms/3x3/3x3Room1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameModels/Blocks/SmoothStoneBlock.tscn" type="PackedScene" id=8]
+[ext_resource path="res://LevelParts/LevelEnd.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Levels/Enviroment.tscn" type="PackedScene" id=12]
+[ext_resource path="res://GameModels/Items/coonan357(item).tscn" type="PackedScene" id=13]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Hallway8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -6, 0, 18 )
+
+[node name="Hallway" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.53674e-07, 0, -7 )
+
+[node name="Hallway2" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.53674e-07, 0, -11 )
+
+[node name="Hallway13" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -19, 0, -6 )
+
+[node name="Hallway14" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -23, 0, -6 )
+
+[node name="Hallway15" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27, 0, -6 )
+
+[node name="Hallway16" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -31, 0, -6 )
+
+[node name="Hallway17" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -35, 0, -6 )
+
+[node name="Hallway3" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.53674e-07, 0, 7 )
+
+[node name="Hallway4" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.53674e-07, 0, 11 )
+
+[node name="3x3Room2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, -18 )
+
+[node name="3x3Room3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 18 )
+
+[node name="3x3Room6" parent="." instance=ExtResource( 6 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -12, 0, 6 )
+
+[node name="3x3Room7" parent="." instance=ExtResource( 6 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -12, 0, -6 )
+
+[node name="Hallway5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 6, 0, -18 )
+
+[node name="3x3Room4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -12, 0, 18 )
+
+[node name="Hallway6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -6, 0, -18 )
+
+[node name="Hallway9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, -12 )
+
+[node name="Hallway10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, 0 )
+
+[node name="Hallway12" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18, 0, 6 )
+
+[node name="Hallway11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, 12 )
+
+[node name="3x3Room10" parent="." instance=ExtResource( 3 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 12, 0, 18 )
+
+[node name="3x3Room11" parent="." instance=ExtResource( 6 )]
+transform = Transform( 3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 12, 0, -6.00002 )
+
+[node name="3x3Room12" parent="." instance=ExtResource( 6 )]
+transform = Transform( 3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 12, 0, 5.99998 )
+
+[node name="3x3Room13" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 12, 0, -18 )
+
+[node name="Hallway18" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 12, 0, 12 )
+
+[node name="Hallway19" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 12, 0, -2.28882e-05 )
+
+[node name="Hallway20" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 12, 0, -12 )
+
+[node name="3x3Room5" parent="." instance=ExtResource( 6 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -18 )
+
+[node name="Hallway7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 6, 0, 18 )
+
+[node name="3x3Room8" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24, 0, 6 )
+
+[node name="Hallway21" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 18, 0, 6 )
+
+[node name="3x3Room14" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24, 0, 6 )
+
+[node name="Hallway22" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 18, 0, -6 )
+
+[node name="3x3Room15" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24, 0, -6 )
+
+[node name="3x3Room9" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42, 0, -6 )
+
+[node name="LevelEnd" parent="3x3Room9" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 2 )
+
+[node name="SmoothStoneBlock" parent="3x3Room9/LevelEnd" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2 )
+
+[node name="SmoothStoneBlock2" parent="3x3Room9/LevelEnd" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2 )
+
+[node name="StoneBrick" parent="3x3Room9/LevelEnd" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 2 )
+
+[node name="StoneBrick2" parent="3x3Room9/LevelEnd" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -2 )
+
+[node name="StoneBrick3" parent="3x3Room9/LevelEnd" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+
+[node name="StoneBrick4" parent="3x3Room9/LevelEnd" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2 )
+
+[node name="StoneBrick5" parent="3x3Room9/LevelEnd" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 2 )
+
+[node name="Light" parent="3x3Room9/LevelEnd/StoneBrick5" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 1, 4 )
+
+[node name="3x3Room" parent="." instance=ExtResource( 7 )]
+
+[node name="Enemy" parent="." instance=ExtResource( 10 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -13, 2, -19 )
+
+[node name="Player" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 10 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 24, 2, -6.00001 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 10 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 24, 2, 5.99998 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 10 )]
+transform = Transform( 5.96046e-08, 0, -1, 0, 1, 0, 1, 0, 5.96046e-08, -23, 2, 5.99998 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 10 )]
+transform = Transform( -5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -7, 2, -18 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 12 )]
+
+[node name="Battery" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -41, 1, -5 )
